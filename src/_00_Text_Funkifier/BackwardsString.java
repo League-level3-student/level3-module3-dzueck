@@ -10,7 +10,7 @@ public class BackwardsString extends SpecialString {
 	public String funkifyText(String s) {
 		char[] temp = s.toCharArray();
 		char[] backwords = new char[temp.length];
-		for(int i = temp.length, j = 0; i > -1; i--, j++) {
+		for(int i = temp.length -1, j = 0; i > -1; i--, j++) {
 			backwords[j] = temp[i];
 		}
 		
